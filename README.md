@@ -1,5 +1,4 @@
-### Hi there 👋
-
+### विद्या धनम् सर्व धन प्रधानम्
 <!--
 **melgiri/melgiri** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
