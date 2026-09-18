@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cybersecurity & Dev Portfolio</title>
+        <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/67330630">
+        <style>
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-color: #f8fafc;
+    --accent-color: #38bdf8;
+    --terminal-green: #22c55e;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 2rem;
+}
+
+header {
+    margin-bottom: 2.5rem;
+}
+
+header h1 {
+    font-family: monospace;
+    font-size: 2rem;
+    color: var(--terminal-green);
+}
+
+.prompt {
+    color: var(--accent-color);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    transition: transform 0.2s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.cards img{
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards h1{
+    font-size: 80px; 
+}
+
+footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #334155;
+    color: #94a3b8;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-contact h3,
+.footer-links h3 {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.footer-contact p {
+    margin: 0.4rem 0;
+}
+
+.footer-contact code {
+    background-color: var(--card-bg);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+    color: var(--terminal-green);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.footer-links a,
+.footer-contact a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.875rem;
+    border-top: 1px solid #1e293b;
+    padding-top: 1.5rem;
+}
+
+.homelab-card {
+  margin-top: 1rem;
+}
+
+.dashboard-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  margin-top: 1rem;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.dashboard-img:hover {
+  opacity: 0.9;
+}
+
+
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <div class="card-grid">
+                <div class="cards">
+                    <img src="https://avatars.githubusercontent.com/u/67330630">
+                </div>
+                <div class="cards">
+                    <h1>melgiri</h1>
+                </div>
+            </div>
+        </header>
+
+        <h1 style="text-align: center;">यत्नानुसारिणि विद्या, बुद्धिः कर्मानुसारिणी</h1><br>
+
+        <h3>I am pursuing cyber security. I have a small homelab and I like coding for fun.</h3>
+        <main>
+            <section>
+                <h2>Cybersecurity Platforms</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>TryHackMe</h3>
+                        <p>Active learning & CTF challenges.</p>
+                        <a href="https://tryhackme.com/p/melgiri" style="text-decoration: none;">@melgiri</a>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>GitHub Projects</h2>
+                <div id="projects-grid" class="card-grid">
+                </div>
+            </section>
+        </main>
+        <section>
+            <h2>Self-Hosted Infrastructure</h2>
+            <div class="card homelab-card">
+                <p>Overview of my personal self hosted services (which i use some time) and internal dashboard.</p>
+                <a href="dashy-dashboard.png" target="_blank" rel="noopener">
+                    <img src="dashy-dashboard.png" alt="Dashy Homelab Dashboard Screenshot" class="dashboard-img" loading="lazy">
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:melgiri@melgiri.in">melgiri@melgiri.in</a></p>
+                    <p>SSH Signing Key Fingerprint: <code>SHA256:YXJ4p+8Nkdm1uBxvu4BWRZ08TT/0i3YO8wltinKqyiY</code></p>
+                </div>
+                <div class="footer-links">
+                    <h3>Connect</h3>
+                    <a href="https://github.com/melgiri" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> melgiri's portfolio. All rights reserved.</p>
+                <p>This is a personal, non-commercial portfolio. Not affiliated with <span style="color: red;">melgiri.com</span>.</p>
+            </div>
+        </footer>
+
+        <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        async function fetchProjects() {
+            const grid = document.getElementById('projects-grid');
+            try {
+                const response = await fetch(`https://api.github.com/users/melgiri/repos?sort=updated&per_page=6`);
+                const repos = await response.json();
+
+                grid.innerHTML = '';
+                repos.forEach(repo => {
+                    if (!repo.fork) {
+                        const card = document.createElement('div');
+                        card.className = 'card';
+                        card.innerHTML = `
+          <h3>${repo.name}</h3>
+          <p>${repo.description || 'No description provided.'}</p>
+          <a href="${repo.html_url}" target="_blank" rel="noopener">View Repository →</a>
+        `;
+                        grid.appendChild(card);
+                    }
+                });
+            } catch (err) {
+                grid.innerHTML = '<p>Failed to load projects from GitHub.</p>';
+            }
+        }
+
+        fetchProjects();
+
+    </script>
+    </body>
+</html>
